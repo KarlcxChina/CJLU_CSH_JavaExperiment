@@ -1,17 +1,25 @@
 package Experiment3;
 
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Path;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class T4
 {
-    public static void main(String[] args)
+    public static void main(String[] args) throws IOException
     {
-        setPrimeList(2147482820);//Max:2147482820
-        System.out.println(isPrime(27644437));
+        Scanner in = new Scanner(Path.of("d:\\number.txt"), StandardCharsets.UTF_8);
     }
+
     static boolean[] a= new boolean[1];
     public static void setPrimeList(int max)//打素数表
     {
+        /*
+        * setPrimeList(2147482820);//Max:2147482820
+        *  System.out.println(isPrime(27644437));
+        * */
         a = Arrays.copyOf(a, max+1);//按照最大值重设数组长度
         for(int i = 2;i<1001;i++)
         {
@@ -36,4 +44,3 @@ public class T4
         return num % 2 == 0;
     }
 }
-//T2
