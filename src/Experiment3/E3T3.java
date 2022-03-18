@@ -2,7 +2,7 @@ package Experiment3;
 
 import java.util.Scanner;
 
-public class T3
+public class E3T3
 {
     public static void main(String[] args)
     {

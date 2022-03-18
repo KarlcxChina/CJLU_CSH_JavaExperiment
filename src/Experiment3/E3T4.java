@@ -7,7 +7,7 @@ import java.nio.file.Path;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class T4
+public class E3T4
 {
     public static void main(String[] args) throws IOException
     {
