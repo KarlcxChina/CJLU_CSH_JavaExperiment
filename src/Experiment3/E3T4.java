@@ -46,9 +46,9 @@ public class E3T4
                 primeOut.print(" ");
             }
         }
-        evenOut.close();
-        oddOut.close();
-        primeOut.close();
+        evenOut.flush();
+        oddOut.flush();
+        primeOut.flush();
     }
 
     static boolean[] a= new boolean[1];
