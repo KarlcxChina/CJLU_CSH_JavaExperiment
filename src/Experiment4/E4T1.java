@@ -11,7 +11,7 @@ public class E4T1
     static class Circle
     {
         final double PI = 3.1415926535897932384626;
-        private double radius;
+        private double radius = 0;
         public Circle(){}
         public Circle(double radiusIn)
         {
