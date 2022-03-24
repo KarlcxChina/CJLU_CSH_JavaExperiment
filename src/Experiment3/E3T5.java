@@ -6,10 +6,7 @@ public class E3T5
 {
     public static void main(String[] args)
     {
-        while(true)
-        {
             judge();
-        }
     }
     public static void judge()
     {
