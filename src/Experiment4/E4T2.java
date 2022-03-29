@@ -11,10 +11,10 @@ public class E4T2
 }
 class Course
 {
-    String courseNumber = "";
-    String courseTitle = "";
-    double credits = 0;
-    double courseHours = 0;
+    private String courseNumber = "";
+    private String courseTitle = "";
+    private double credits = 0;
+    private double courseHours = 0;
     Course(){};
     Course(String courseNumber,String courseTitle,double credits)
     {
