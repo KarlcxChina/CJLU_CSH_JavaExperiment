@@ -1,7 +1,5 @@
 package Experiment4;
 
-import java.util.Scanner;
-
 public class E4T1
 {
     public static void main(String[] args)
