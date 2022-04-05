@@ -1,16 +1,8 @@
 package Experiment5;
-
-public class E5T3
+//E5T3
+public class TestInstrument
     {
         public static void main(String[] args)
-            {
-                TestInstrument test = new TestInstrument();
-            }
-    }
-
-class TestInstrument
-    {
-        public TestInstrument()
             {
                 Erhu erhu = new Erhu();
                 Violin violin = new Violin();
