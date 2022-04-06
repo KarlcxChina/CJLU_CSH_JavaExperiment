@@ -1,4 +1,5 @@
 package Experiment5;
+
 //E5T1
 class Rectangle
     {
@@ -78,18 +79,18 @@ class Cuboid extends Rectangle
 
         public double area()
             {
-                return 2*(super.area()+getHeight()*(getLength()+getWidth()));
+                return 2 * (super.area() + getHeight() * (getLength() + getWidth()));
             }
 
         public double volume()
             {
-                return super.area()*getHeight();
+                return super.area() * getHeight();
             }
 
         public void showMe()
             {
-                System.out.print("长方体: 长 " + getLength() + ", 宽 " + getWidth()+ ", 高 " + getHeight());
-                System.out.println(", 表面积 " + area()+ ", 体积 " + volume());
+                System.out.print("长方体: 长 " + getLength() + ", 宽 " + getWidth() + ", 高 " + getHeight());
+                System.out.println(", 表面积 " + area() + ", 体积 " + volume());
             }
     }
 
@@ -98,7 +99,7 @@ public class CuboidTest
         public static void main(String[] args)
             {
                 Cuboid c1 = new Cuboid(5.0, 6.0, 7.0);
-                Rectangle r1= new Rectangle(5,6);
+                Rectangle r1 = new Rectangle(5, 6);
                 r1.showMe();
                 c1.showMe();
             }
