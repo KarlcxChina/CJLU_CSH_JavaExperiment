@@ -1,6 +1,6 @@
 package Experiment6;
 
-//E6T1
+//E6T1&2
 interface ShapeX
     {
         double area();
@@ -20,6 +20,10 @@ class Rectangle implements ShapeX
         public double perimeter()
             {
                 return 2 * (getLength() + getWidth());
+            }
+
+        public Rectangle()
+            {
             }
 
         public Rectangle(double length, double width)
@@ -46,6 +50,12 @@ class Rectangle implements ShapeX
         public void setWidth(double width)
             {
                 this.width = width;
+            }
+
+        public void copy(Rectangle copiee)
+            {
+                copiee.setWidth(this.getWidth());
+                copiee.setLength(this.getLength());
             }
 
         public String toString()
@@ -178,5 +188,11 @@ public class ShapeXTest
                 System.out.println(o);
                 Triangle t = new Triangle(3, 3, 3);
                 System.out.println(t);
+                System.out.println("克隆对象……");
+                Rectangle r1 = new Rectangle(6, 2);
+                Rectangle r2 = new Rectangle();
+                r1.copy(r2);
+                System.out.println(r1);
+                System.out.println(r2);
             }
     }
