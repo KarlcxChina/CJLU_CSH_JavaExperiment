@@ -34,7 +34,7 @@ class Triangle
                 System.out.print("三个边长 " + getLengthX() + ", " + getLengthY() + ", " + getLengthZ());
                 if (getLengthX() + getLengthY() > getLengthZ() && getLengthX() + getLengthZ() > getLengthY() && getLengthY() + getLengthZ() > getLengthX())
                     {
-
+                        //同样是坏习惯，同意懒得改
                     } else
                     {
                         throw new TriangleException();
