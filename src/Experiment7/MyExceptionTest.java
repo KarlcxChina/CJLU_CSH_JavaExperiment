@@ -34,7 +34,7 @@ public class MyExceptionTest
                                 System.out.println(a+"*"+b+"="+multiply(a, b));
                             } catch (MyException e)
                             {
-
+                                //坏习惯，但是我懒得改了
                             }
                     }
                 System.out.println("输入两个0,程序结束!");
