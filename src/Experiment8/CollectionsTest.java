@@ -1,5 +1,5 @@
 package Experiment8;
-
+//E8T3
 import java.util.HashMap;
 
 class Student
@@ -64,20 +64,21 @@ public class CollectionsTest
     {
         public CollectionsTest()
             {
-                HashMap<String,Student> hMap = new HashMap<String,Student>();
-                Student stu=new Student("17H001","唐僧",40);
-                hMap.put("ts",stu);
-                stu.setId("17H002");
-                stu.setName("孙悟空");
-                stu.setAge(2000);
-                hMap.put("swk",stu);
-                stu.setId("17H003");
-                stu.setName("猪八戒");
-                stu.setAge(1000);
-                hMap.put("zbj",stu);
-                stu.setId("17H003");
-                stu.setName("沙僧");
-                stu.setAge(900);
-                hMap.put("ss",stu);
+                HashMap<String, Student> hMap = new HashMap<String, Student>();
+                hMap.put("17H001", new Student("17H001", "唐僧", 40));
+                hMap.put("17H002", new Student("17H002", "孙悟空", 2000));
+                hMap.put("17H003", new Student("17H003", "猪八戒", 1000));
+                hMap.put("17H004", new Student("17H004", "沙僧", 900));
+                System.out.println(hMap.get("17H003"));
+                for (String key : hMap.keySet())
+                    {
+                        System.out.println(hMap.get(key));
+                    }
+                hMap.remove("17H001");
+            }
+
+        public static void main(String[] args)
+            {
+                new CollectionsTest();
             }
     }
