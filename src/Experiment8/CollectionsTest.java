@@ -52,11 +52,7 @@ class Student
         @Override
         public String toString()
             {
-                return "Student{" +
-                        "id='" + id + '\'' +
-                        ", name='" + name + '\'' +
-                        ", age=" + age +
-                        '}';
+                return "学号：" + id + ", 姓名=" + name + ", 年龄：" + age ;
             }
     }
 
@@ -69,12 +65,34 @@ public class CollectionsTest
                 hMap.put("17H002", new Student("17H002", "孙悟空", 2000));
                 hMap.put("17H003", new Student("17H003", "猪八戒", 1000));
                 hMap.put("17H004", new Student("17H004", "沙僧", 900));
+                System.out.println("学号17H003学生信息:");
                 System.out.println(hMap.get("17H003"));
+                System.out.println();
+                System.out.println("所有学生信息:");
                 for (String key : hMap.keySet())
                     {
                         System.out.println(hMap.get(key));
                     }
+                System.out.println();
                 hMap.remove("17H001");
+                System.out.println("移除唐僧后所有学生信息:");
+                for (String key : hMap.keySet())
+                    {
+                        System.out.println(hMap.get(key));
+                    }
+                System.out.println();
+                System.out.println("把HashMap变成数组后，所有学生信息:");
+                Student[] stuarr = new Student[hMap.size()];
+                int count = 0;
+                for (String key : hMap.keySet())
+                    {
+                        stuarr[count] = hMap.get(key);
+                        count++;
+                    }
+                for (Student i : stuarr)
+                {
+                    System.out.println(i);
+                }
             }
 
         public static void main(String[] args)
