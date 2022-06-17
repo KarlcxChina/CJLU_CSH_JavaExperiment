@@ -158,12 +158,11 @@ class Frame2 extends JFrame implements ActionListener
     {
         Frame2()
             {
-                JFrame jFrame = new JFrame("猜猜我的爱好");//新建窗体
-                jFrame.setLayout(new BorderLayout());//解除布局限制
-                jFrame.setBounds(200, 170, 500, 440);//设置大小
-                jFrame.setVisible(true);//设置可视度
+                JFrame jFrame = new JFrame("猜猜我的爱好");
+                jFrame.setLayout(new BorderLayout());
+                jFrame.setBounds(200, 170, 500, 440);
+                jFrame.setVisible(true);
                 JComboBox<String> items = new JComboBox<>();
-                //设置复选框子项
                 items.addItem("学习");
                 items.addItem("音乐");
                 items.addItem("旅游");
@@ -173,14 +172,14 @@ class Frame2 extends JFrame implements ActionListener
                 JPanel jPanel = new JPanel();
                 jPanel.setLayout(null);
                 jPanel.add(items);
-                items.setBounds(50, 0, 100, 20);//设置大小
+                items.setBounds(50, 0, 100, 20);
                 jFrame.add(jPanel);
                 JTextField jTextField = new JTextField();
                 jTextField.setBounds(150, 0, 300, 20);
                 jTextField.setVisible(true);
                 jFrame.setVisible(true);
                 jPanel.add(jTextField);
-                items.addItemListener(e1 ->//添加监听器
+                items.addItemListener(e1 ->
                     {
                         String s = (String) items.getSelectedItem();
                         if ("和平".equals(s))
